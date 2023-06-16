@@ -1,0 +1,12 @@
+﻿@model Hotel
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete:::@Model.HotelName</h1>
+
+<form asp-action="Delete">
+    <h1>Are you sure for removing it??</h1>
+    <input type="submit" value="delete" class="btn btn-primary"/>
+    <a asp-action="Index" class="btn btn-primary">Back home</a>
+</form>

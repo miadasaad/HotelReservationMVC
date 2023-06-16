@@ -1,0 +1,14 @@
+﻿@model Hotel
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>Detail of @Model.HotelName</h1>
+
+<h4>description::: @Model.description</h4>
+<h4>rates:::@Model.Rates</h4>
+
+<h4>location:::@Model.location</h4>
+
+<a asp-action="Index" class="btn btn-primary">Back home</a>
+

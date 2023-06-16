@@ -1,0 +1,19 @@
+﻿@model City
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <form>
+        <div class="d-flex">
+            <div>select city <select asp-items="@ViewBag.cities" asp-for="Id"></select></div>
+            <div>CheckIn<input type="date" name="check" placeholder="chechIn...checkOut"></div>
+            <div></div>
+        </div>
+      
+       
+    </form>
+</div>

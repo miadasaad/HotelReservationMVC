@@ -1,0 +1,18 @@
+﻿@model Hotel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<form asp-action="create">
+    HotelName <input asp-for="HotelName" /><br />
+    Location <input asp-for="location" /><br />
+    Rates <input asp-for="Rates" /><br />
+    NumOfRoom <input asp-for="NumOfRooms" /><br />
+    Description <input asp-for="description" /><br />
+    ImgUrl <input asp-for="imgUrl" /><br />
+    <select asp-for="CityId" asp-items="ViewBag.cities" multiple></select>
+    <input type="submit" value="Add" />
+</form>
+

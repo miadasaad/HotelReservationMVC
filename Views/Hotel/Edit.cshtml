@@ -1,0 +1,15 @@
+﻿@model Hotel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<form asp-action="Edit">
+    <input type="text" asp-for="@Model.id" hidden/>
+    HotelName <input type="text" asp-for="@Model.HotelName" />
+    Rattes <input type="text" asp-for="@Model.Rates" />
+    <input type="submit" value="edit" class="btn btn-primary"/>
+    <a asp-action="Index" class="btn btn-primary">Back home</a>
+</form>
+
